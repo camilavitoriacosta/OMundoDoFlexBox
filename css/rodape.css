@@ -17,6 +17,14 @@
 	font-size: .9em;
 }
 
+.rodapePrincipal-navMap-list{
+	display: flex;
+	/* flex-direction: column;
+	flex-wrap: wrap; */
+	flex-flow: column wrap;
+	height: 260px;
+}
+
 .navmap-list-title {
 	font-weight: 700;
 	font-size: 1.3em;
