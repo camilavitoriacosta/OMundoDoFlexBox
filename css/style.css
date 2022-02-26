@@ -20,8 +20,14 @@ body {
 	text-align: center;
 }
 
+.conteudoPrincipal-cursos{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .conteudoPrincipal-cursos-link {
 	height: 100px;
+	width: 20%;
 	background-color: #FFF;
 	text-align: center;
 	margin: 1%;
