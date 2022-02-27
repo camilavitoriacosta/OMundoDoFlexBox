@@ -81,6 +81,10 @@ body {
   color: #fff;
 }
 
+.videoSobre .container {
+  display: flex;
+}
+
 .videoSobre-sobre-title {
   font-size: 1.2em;
   font-weight: bolder;
@@ -89,6 +93,22 @@ body {
 .videoSobre-sobre {
   font-size: 1.3em;
   line-height: 2;
+}
+
+.videoSobre-sobre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 1;
+}
+
+.videoSobre-video {
+  flex-grow: 1;
+  flex-shrink: 2;
 }
 
 .videoSobre-button {
@@ -122,7 +142,7 @@ body {
 }
 
 @media (min-width: 1000px) {
-   .conteudoPrincipal-cursos-link:nth-child(4n) {
+  .conteudoPrincipal-cursos-link:nth-child(4n) {
     margin-right: 0;
   }
 
@@ -143,6 +163,14 @@ body {
 
   .conteudoPrincipal-cursos-link {
     width: 100%;
+  }
+
+  .videoSobre .container {
+    flex-direction: column;
+  }
+
+  .videoSobre-video {
+    margin: 0 auto;
   }
 
   .rodapePrincipal-navMap-list {
