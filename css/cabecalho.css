@@ -4,9 +4,8 @@
 }
 
 .cabecalhoPrincipal .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: column;
 }
 
 .cabecalhoPrincipal-titulo {
@@ -22,6 +21,7 @@
 
 .cabecalhoPrincipal-nav{
     display: flex;
+	flex-direction: column;
 }
 
 .cabecalhoPrincipal-nav-link {
@@ -38,6 +38,16 @@
 
 
 @media(min-width: 769px) {
+	.cabecalhoPrincipal-nav{
+		flex-direction: row;
+	}
+
+	.cabecalhoPrincipal .container {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
     .cabecalhoPrincipal-nav-link {
 		border-radius: 5px;
 		border: 1px solid #9799A6;
